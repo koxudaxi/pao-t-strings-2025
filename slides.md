@@ -1246,6 +1246,87 @@ transition: slide-up
 <h1 class="text-6xl">Closing</h1>
 
 ---
+
+# Ongoing Efforts
+
+## 🔧 Bringing t-strings everywhere
+
+<v-click>
+
+### MicroPython Implementation
+
+- 📱 Enabling t-strings in embedded systems
+- 🌐 Powers PyScript for browser-based Python
+- 🚧 PR #17557 currently open
+
+<img src="/assets/qr-micropython-pr.png" class="w-24 h-24 mx-auto mt-4" alt="MicroPython PR QR" />
+
+</v-click>
+
+<div v-click class="grid grid-cols-2 gap-8 mt-8">
+
+<div>
+
+### Why MicroPython?
+
+- IoT and embedded devices
+- Browser runtime (PyScript)
+- Educational platforms
+
+</div>
+
+<div>
+
+### Impact
+
+- Safe templates on microcontrollers
+- Web development with PyScript
+- Consistent Python experience
+
+</div>
+
+</div>
+
+---
+
+# PyScript + t-strings = Frontend Revolution
+
+<v-click>
+
+### 🎯 No server needed! Python in the browser
+
+**Like JavaScript, but with Python's power**
+
+</v-click>
+
+<v-click>
+
+### With `tdom` and t-strings:
+- Component-driven UI like React
+- Safe HTML generation  
+- All in Python, all in the browser
+
+</v-click>
+
+<v-click>
+
+```python
+# Future: React-like components in Python!
+from tdom import html
+
+@component
+def UserCard(user):
+    return html(t"""
+        <div class="card">
+            <h2>{user.name}</h2>
+            <p>{user.bio}</p>
+        </div>
+    """)
+```
+
+</v-click>
+
+---
 layout: center
 transition: slide-up
 ---
@@ -1281,38 +1362,45 @@ transition: fade
 
 # Let's Connect!
 
-<div class="space-y-4 text-lg">
+<div class="space-y-3 text-base">
   <div>
-    <div class="text-2xl font-bold text-yellow-400 mb-2">📄 Documentation</div>
+    <div class="text-xl font-bold text-yellow-400 mb-1">📄 Documentation</div>
     <div class="flex items-center gap-2">
-      <div>t-strings.help</div>
-      <img src="/assets/qr-t-strings-help.png" class="w-12 h-12" alt="QR" />
+      <div class="text-sm">t-strings.help</div>
+      <img src="/assets/qr-t-strings-help.png" class="w-10 h-10" alt="QR" />
     </div>
-    <div>PEP 750</div>
+    <div class="text-sm">PEP 750</div>
   </div>
   
   <div>
-    <div class="text-2xl font-bold text-green-400 mb-2">💻 Resources</div>
+    <div class="text-xl font-bold text-green-400 mb-1">💻 Resources</div>
     <div class="flex items-center gap-2">
-      <div class="text-sm">github.com/t-strings/awesome-t-strings</div>
-      <img src="/assets/qr-awesome-t-strings.png" class="w-12 h-12" alt="QR" />
+      <div class="text-xs">github.com/t-strings/awesome-t-strings</div>
+      <img src="/assets/qr-awesome-t-strings.png" class="w-10 h-10" alt="QR" />
     </div>
     <div class="flex items-center gap-2">
-      <div class="text-sm">github.com/t-strings/tdom</div>
-      <img src="/assets/qr-tdom.png" class="w-12 h-12" alt="QR" />
+      <div class="text-xs">github.com/t-strings/tdom</div>
+      <img src="/assets/qr-tdom.png" class="w-10 h-10" alt="QR" />
     </div>
-    <div>pep750-examples repository</div>
   </div>
   
   <div>
-    <div class="text-2xl font-bold text-blue-400 mb-2">🔧 Tools</div>
+    <div class="text-xl font-bold text-yellow-400 mb-1">📊 This Presentation</div>
     <div class="flex items-center gap-2">
-      <div class="text-sm">github.com/koxudaxi/t-linter</div>
-      <img src="/assets/qr-t-linter-repo.png" class="w-12 h-12" alt="QR" />
+      <div class="text-xs">github.com/koxudaxi/pao-t-strings-2025</div>
+      <img src="/assets/qr-github-repo.png" class="w-10 h-10" alt="QR" />
     </div>
-    <div class="flex items-center gap-2">
-      <div class="text-sm">github.com/koxudaxi/t-linter-pycharm-plugin</div>
-      <img src="/assets/qr-t-linter-pycharm.png" class="w-12 h-12" alt="QR" />
+  </div>
+  
+  <div>
+    <div class="text-xl font-bold text-blue-400 mb-1">🔧 Tools</div>
+    <div class="flex items-center gap-1">
+      <div class="text-xs">t-linter (VSCode)</div>
+      <img src="/assets/qr-t-linter-repo.png" class="w-10 h-10" alt="QR" />
+    </div>
+    <div class="flex items-center gap-1">
+      <div class="text-xs">t-linter (PyCharm)</div>
+      <img src="/assets/qr-t-linter-pycharm.png" class="w-10 h-10" alt="QR" />
     </div>
   </div>
 </div>
