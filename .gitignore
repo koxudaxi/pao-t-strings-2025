@@ -1,0 +1,28 @@
+node_modules
+.DS_Store
+dist
+*.local
+.vite-inspect
+.remote-assets
+components.d.ts
+
+# IDE
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# Project specific
+CLAUDE.md
+
+# UV
+uv.lock

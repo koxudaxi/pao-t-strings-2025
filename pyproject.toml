@@ -1,0 +1,28 @@
+[project]
+name = "pao-t-strings-2025"
+version = "0.1.0"
+description = "t-strings (PEP 750) presentation and examples for PAO Charity Event 2025"
+requires-python = ">=3.14"
+authors = [
+    {name = "Koudai Aono", email = "koxudaxi@gmail.com"}
+]
+dependencies = [
+    # Core dependencies would go here
+    # t-strings libraries are optional as they may not be available yet
+]
+
+[project.optional-dependencies]
+tstrings = [
+    "tdom",
+    "sql-tstring",
+]
+
+[tool.uv]
+python-preference = "only-managed"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

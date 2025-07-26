@@ -1,0 +1,51 @@
+version = 1
+revision = 1
+requires-python = ">=3.14"
+
+[[package]]
+name = "dill"
+version = "0.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/12/80/630b4b88364e9a8c8c5797f4602d0f76ef820909ee32f0bacb9f90654042/dill-0.4.0.tar.gz", hash = "sha256:0633f1d2df477324f53a895b02c901fb961bdbf65a17122586ea7019292cbcf0", size = 186976 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/50/3d/9373ad9c56321fdab5b41197068e1d8c25883b3fea29dd361f9b55116869/dill-0.4.0-py3-none-any.whl", hash = "sha256:44f54bf6412c2c8464c14e8243eb163690a9800dbe2c367330883b19c7561049", size = 119668 },
+]
+
+[[package]]
+name = "pao-t-strings-2025"
+version = "0.1.0"
+source = { editable = "." }
+
+[package.optional-dependencies]
+tstrings = [
+    { name = "sql-tstring" },
+    { name = "tdom" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "sql-tstring", marker = "extra == 'tstrings'" },
+    { name = "tdom", marker = "extra == 'tstrings'" },
+]
+provides-extras = ["tstrings"]
+
+[[package]]
+name = "sql-tstring"
+version = "0.3.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/cb/86/3fc21a6beac6563ea94dcc9dacf7a0ee94294bcb7646ba90d8025966b40d/sql_tstring-0.3.0.tar.gz", hash = "sha256:831c89d12b95eebab9c2937ef375c531b54d2d3b2e13dd6666d23e785b232a35", size = 10842 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2f/2e/848ba0381b62a64ff4fa1688cf52de1c43f202a938905ca25c12e3050a83/sql_tstring-0.3.0-py3-none-any.whl", hash = "sha256:069f2a6417c267752ca4e164b528180675944d575bfd31604fe76b91a44ce807", size = 8895 },
+]
+
+[[package]]
+name = "tdom"
+version = "0.0.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "dill" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/78/0b/43038125308d53d6464cf435cb340b1a3fd2651c7fe998393b2464d75cf9/tdom-0.0.7.tar.gz", hash = "sha256:67f60e812fadf32aaf8d9fac81fa1df3efc80489dc7c7bcc0b11f2e4f62c0acf", size = 36356 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9d/b9/2474e65abfc59a980502ad8986a7039063d855d9ff0b6acb4087ad62ff3e/tdom-0.0.7-py3-none-any.whl", hash = "sha256:d61a5d9a418f86817cca71e4d60459c861f173155df3c1b44a265868fb210439", size = 15541 },
+]
