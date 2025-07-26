@@ -1246,6 +1246,9 @@ transition: slide-up
 <h1 class="text-6xl">Closing</h1>
 
 ---
+layout: default
+transition: slide-left
+---
 
 # Ongoing Efforts
 
